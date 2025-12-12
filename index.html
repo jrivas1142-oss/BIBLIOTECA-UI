@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEFYMAKEUP |Biblioteca UI</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="navbar__brand">STEFYMAKEUP</a>
+        <div class="navbar__toggle" onclick="document.querySelector('.navbar__menu').classList.toggle('is-open')">☰</div> 
+        <ul class="navbar__menu">
+            <li class="navbar__item"><a href="#" class="navbar__link">Inicio</a></li>
+            <li class="navbar__item"><a href="#productos" class="navbar__link">Productos</a></li>
+            <li class="navbar__item"><a href="#ayuda" class="navbar__link">Ayuda</a></li>
+            <li class="navbar__item"><a href="#productos" class="btn btn--primary">Carrito de compras</a></li> 
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero-section d-flex align-center justify-center">
+            <div class="hero-content">
+                <h1 class="hero-title">La belleza comienza cuando decides ser tú misma🫦</h1>
+                <p class="hero-subtitle mb-md">Donde la belleza se transforma en perfección.</p> 
+                <p class="hero-subtitle mb-md">Descubre nuestra nueva linea de labiales.</p> 
+                <a href="#productos" class="btn btn--primary btn--large">Ver coleccion</a>
+                
+            </div>
+        </section>
+
+        <section class="container section" id="productos">
+            <h2 class="mb-lg">PRODUCTOS</h2>
+            <h2>Labiales</h2>
+            <div class="card-grid">
+                
+                <article class="card card--shadow">
+                    <img src="assets/e32407e270f94740e1a2f6e4cc574f7d.jpg"  class="product-image">
+                    <div class="card__header">Labial Tono Rojo</div>
+                    <div class="card__body">
+                        <p class="product-price mb-md">$9.99</p>
+                        <button class="btn btn--primary">Añadir al Carrito</button>
+                        <button class="btn btn--secundary">Ver más</button>
+                    </div>
+                </article>
+                
+                <article class="card">
+                    <img src="assets\3_easy-resize.webp"  class="product-image">
+                    <div class="card__header">Gloss Larga Duración</div>
+                    <div class="card__body">
+                        <p class="product-price mb-md">$6.99</p>
+                        <button class="btn btn--primary">Añadir al Carrito</button>
+                        <button class="btn btn--secundary">Ver más</button>
+                    </div>
+                </article>
+                
+                <article class="card card--shadow">
+                    <img src="assets\fe999b9773b7d0b53aae62d109fbfe01.jpg" alt="Base" class="product-image">
+                    <div class="card__header">Labial Mate Forever</div>
+                    <div class="card__body">
+                        <p class="product-price mb-md">$12.99</p>
+                        <button class="btn btn--primary">Añadir al Carrito</button>
+                        <button class="btn btn--secundary">Ver más</button>
+                    </div>
+                </article>
+                
+        </section>
+        
+        <section class="container section" id="ayuda">
+            <h2 class="mb-lg">Para mas información y ayuda</h2>
+            <div class="d-flex flex-row-responsive">
+                
+                <div style="flex: 1; padding-right: 30px;">
+                    <h3>Contáctanos al </h3>
+                    <h3>0998282332</h3>
+                    <h3>o envianos un correo </h3>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="Escribe tu correo electonico">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea id="message" class="form-textarea" rows="4"></textarea>
+                    </div>
+                    <button class="btn btn--primary">Enviar</button>
+                </div>
+                </section>
+
+<section class="container section" id="faq">
+            <h2 class="mb-lg">Prefuntas o Dudas</h2>
+            <div class="accordion-group">
+                
+                <div class="accordion-item">
+                    <input type="checkbox" id="acc-1" class="accordion__toggle">
+                    <label for="acc-1" class="accordion__header">¿Aceptan devoluciones?</label>
+                    <div class="accordion__content">
+                        <p>Sí, aceptamos devoluciones dentro de los 30 días posteriores a la compra, siempre que el producto no haya sido abierto ni utilizado.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <input type="checkbox" id="acc-2" class="accordion__toggle">
+                    <label for="acc-2" class="accordion__header">¿Cuál es el tiempo de envío estándar?</label>
+                    <div class="accordion__content">
+                        <p>El envío estándar toma de 3 a 5 días hábiles dentro del país.</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+    </main>
+    
+    <footer class="footer d-flex justify-center align-center">
+        <p>&copy; 2025 STEFYMAKEUP</p>
+    </footer>
+    
+    <script>
+        document.querySelector('.navbar__toggle').onclick = function() {
+            document.querySelector('.navbar__menu').classList.toggle('is-open');
+        }
+    </script>
+</body>
+</html>

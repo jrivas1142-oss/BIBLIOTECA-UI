@@ -1,0 +1,27 @@
+/* assets/styles/components/_utilities.css */
+/* Clases de Espaciado */
+.m-0 { margin: 0 !important; }
+.mb-sm { margin-bottom: var(--spacing-sm) !important; }
+.mb-md { margin-bottom: var(--spacing-md) !important; }
+.p-md { padding: var(--spacing-md) !important; }
+
+/* Clases de Display */
+.d-flex { display: flex !important; }
+.d-block { display: block !important; }
+
+/* Clases de Alineación */
+.justify-center { justify-content: center !important; }
+.align-center { align-items: center !important; }
+
+/* Texto de ayuda para accesibilidad */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

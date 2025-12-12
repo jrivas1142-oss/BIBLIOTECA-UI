@@ -1,0 +1,24 @@
+/* assets/styles/components/_root-vars.css */
+:root {
+  /* Paleta de Colores*/
+  --color-primary: #240046;   
+  --color-secondary: #6d597a; 
+  --color-danger: #b56576;
+  --color-text: #212121;      
+  --color-background: #f7ede2;
+  --color-white: #e0aaff;     
+  
+  /* Tipografía*/
+  --font-family-base: 'Lato', sans-serif;
+  --font-family-heading: 'Montserrat', sans-serif;
+  --font-size-base: 16px;
+  
+  /* Espaciado */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px; 
+  
+  /* Bordes y Sombras */
+  --border-radius-base: 4px;
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.08); 
+}

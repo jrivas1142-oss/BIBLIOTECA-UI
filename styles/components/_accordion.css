@@ -1,0 +1,61 @@
+/* styles/components/_accordion.css */
+/*Acordeón controlado por la pseudo-clase :checked */
+
+.accordion-group {
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius-base);
+    overflow: hidden;
+    margin-top: var(--spacing-md);
+}
+
+.accordion-item {
+    border-bottom: 1px solid #eee;
+}
+.accordion-item:last-child { border-bottom: none; }
+
+/* Ocultar el input que actúa como interruptor */
+.accordion__toggle { 
+    display: none; 
+}
+
+.accordion__header {
+    display: block;
+    cursor: pointer;
+    padding: var(--spacing-md);
+    background-color: var(--color-background-light);
+    font-weight: 700;
+    color: var(--color-secondary);
+    transition: background-color var(--transition-speed);
+}
+
+.accordion__header:hover { background-color: #e0e0e0; }
+
+.accordion__header::after {
+    content: '+';
+    float: right;
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    transition: transform var(--transition-speed);
+}
+
+/* Contenido que se colapsa */
+.accordion__content {
+    
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.4s;
+    background-color: var(--color-text-light);
+    padding: 0 var(--spacing-md); 
+}
+
+/* Cuando el input está checked, selecciona el contenido hermano y aplica max-height */
+.accordion__toggle:checked + .accordion__header + .accordion__content {
+    max-height: 500px; /* Suficiente altura para el contenido */
+    padding: var(--spacing-md);
+}
+
+/* Rota el signo '+' a '-' cuando está abierto */
+.accordion__toggle:checked + .accordion__header::after {
+    content: '-';
+    transform: rotate(0deg); 
+}

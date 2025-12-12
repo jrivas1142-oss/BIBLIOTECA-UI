@@ -1,0 +1,11 @@
+/* styles/main.css */
+
+/*importaciones de los componentes*/
+@import url("components/_root-vars.css"); 
+@import url("components/_base.css");    
+@import url("components/_buttons.css");
+@import url("components/_card.css");
+@import url("components/_forms.css");
+@import url("components/_navbar.css");
+@import url("components/_utilities.css");
+@import url('components/_accordion.css');
